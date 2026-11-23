@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IACA — Intervenciones Asistidas con Animales — Municipalidad de General Pueyrredon</title>
+  <link rel="icon" type="image/png" href="img/logo-mardelplata.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css?v=2">
+  <!-- Mejora progresiva: marca que hay JavaScript (el menú móvil solo se colapsa si hay JS) -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="pagina">
+
+  <!-- ======================================================== -->
+  <!-- ENCABEZADO INSTITUCIONAL (igual al de la página principal) -->
+  <!-- ======================================================== -->
+  <header class="header">
+    <div class="header__contenedor">
+
+      <a href="index.html" class="header__logo" aria-label="Inicio - Municipalidad de Mar del Plata">
+        <img src="img/logo-mardelplata.png" width="69" height="69" alt="Logotipo de la Municipalidad de Mar del Plata" class="header__logo-img">
+      </a>
+
+      <nav class="header__nav" id="menuPrincipal" aria-label="Menú principal de navegación">
+        <ul class="header__nav-lista">
+          <li class="header__nav-item"><a href="index.html#inicio" class="header__nav-enlace">Inicio</a></li>
+          <li class="header__nav-item"><a href="index.html#tasas" class="header__nav-enlace">Tasas</a></li>
+          <li class="header__nav-item"><a href="index.html#noticias" class="header__nav-enlace">Noticias</a></li>
+          <li class="header__nav-item"><a href="index.html#mapa" class="header__nav-enlace">Mapa</a></li>
+          <li class="header__nav-item"><a href="index.html#servicios" class="header__nav-enlace">Servicios</a></li>
+          <li class="header__nav-item"><a href="index.html#turismo" class="header__nav-enlace">Turismo</a></li>
+          <li class="header__nav-item"><a href="index.html#mdqdigital" class="header__nav-enlace">MDQDigital</a></li>
+        </ul>
+
+        <ul class="redes-sociales header__nav-redes">
+          <li class="redes-sociales__item"><a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de contacto"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Facebook institucional"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial en X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+
+      <div class="header__redes">
+        <ul class="redes-sociales">
+          <li class="redes-sociales__item"><a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de contacto"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Facebook institucional"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial en X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <button class="header__hamburguesa" id="botonHamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="header__hamburguesa-linea"></span>
+        <span class="header__hamburguesa-linea"></span>
+        <span class="header__hamburguesa-linea"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main class="principal">
+
+    <!-- ====================================================== -->
+    <!-- TÍTULO DE LA PÁGINA                                    -->
+    <!-- ====================================================== -->
+    <section class="hero-pagina" aria-labelledby="titulo-iaca">
+      <a href="index.html#servicios" class="hero-pagina__volver" aria-label="Volver a Zoonosis y Bienestar Animal">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </a>
+      <div class="hero-pagina__contenedor">
+        <h1 class="hero-pagina__titulo" id="titulo-iaca">IACA</h1>
+        <p class="hero-pagina__subtitulo">Programa Municipal de Intervenciones Asistidas con Animales - IACA</p>
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- INSTITUCIONAL                                          -->
+    <!-- ====================================================== -->
+    <section class="bloque-institucional" aria-labelledby="titulo-institucional">
+      <div class="contenedor">
+        <h2 class="titulo-seccion titulo-seccion--claro" id="titulo-institucional">INSTITUCIONAL</h2>
+        <p class="bloque-institucional__texto">
+          El Programa Municipal de IACA se crea bajo la Resolución Nº 2610/15 de la Secretaría de Salud. El mismo trabaja con un dispositivo externo, brindando servicio desde el año 2012 a Escuelas Especiales Provinciales, ONG, Centros Educativos- Terapéuticos, Hogares de Ancianos, CAPs, Hogares de Niños.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- OBJETIVOS                                              -->
+    <!-- ====================================================== -->
+    <section class="bloque-objetivos" aria-labelledby="titulo-objetivos">
+      <div class="contenedor bloque-objetivos__grilla">
+
+        <div class="bloque-objetivos__lateral">
+          <h2 class="titulo-seccion" id="titulo-objetivos">OBJETIVOS</h2>
+          <figure class="figura-ilustracion figura-ilustracion--imagen">
+            <img loading="lazy" src="img/iaca-gato.png" width="521" height="521" alt="Ilustración de un gato jugando con una pelota" class="figura-ilustracion__img">
+          </figure>
+        </div>
+
+        <div class="bloque-objetivos__contenido">
+          <h3 class="subtitulo-seccion">GENERAL</h3>
+          <p class="texto-seccion">Mejorar la calidad de vida de los usuarios de las intervenciones.</p>
+
+          <h3 class="subtitulo-seccion subtitulo-seccion--separado">ESPECÍFICOS</h3>
+          <ul class="lista-vinetas">
+            <li>Brindar servicio a instituciones públicas y sin fines de lucro de la ciudad de Mar del plata.</li>
+            <li>Seleccionar y adiestrar perros internados en el Centro de Sanidad y Control Animal, para que puedan participar del Programa o ser donados a instituciones.</li>
+            <li>Formar y capacitar Profesionales de Salud y de la Educación Municipales en el ámbito de las IACA.</li>
+            <li>Brindar jornadas educativas/ formativas sobre IACA.</li>
+            <li>Brindar charlas de concientización de Perros de Asistencia/ Servicio en ámbitos educativos y público en general.</li>
+            <li>Brindar espacios de pasantías a alumnos de Acompañamiento Terapéutico, Lic. De Terapia Ocupacional y docentes de Educación Especial de la ciudad de Mar del Plata.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- METODOLOGÍA                                            -->
+    <!-- ====================================================== -->
+    <section class="bloque-tarjetas" aria-labelledby="titulo-metodologia">
+      <div class="contenedor">
+        <h2 class="titulo-seccion titulo-seccion--claro" id="titulo-metodologia">METODOLOGÍA</h2>
+        <p class="bloque-tarjetas__bajada">La actividad específica se desarrolla con tres tipos de modalidades:</p>
+
+        <div class="bloque-tarjetas__grilla">
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">ACTIVIDAD ASISTIDA CON ANIMALES</h3>
+              <p class="tarjeta-info__descripcion">El propósito es educacional y está orientado a niños con trastornos del comportamiento.</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">TERAPIA ASISTIDA CON ANIMALES</h3>
+              <p class="tarjeta-info__descripcion">Proceso en el que hay un objetivo pre establecido y articulado al tratamiento general bajo la dirección de profesionales, de modalidad individual o grupal, y evaluación sistemática.</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">EDUCACIÓN ASISTIDA CON ANIMALES</h3>
+              <p class="tarjeta-info__descripcion">El propósito es educacional y está orientado a niños con trastornos del comportamiento.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- LUGARES DE INTERVENCIÓN                                -->
+    <!-- ====================================================== -->
+    <section class="bloque-lugares" aria-labelledby="titulo-lugares">
+      <div class="contenedor bloque-lugares__grilla">
+
+        <div class="bloque-lugares__contenido">
+          <h2 class="titulo-seccion" id="titulo-lugares">LUGARES DE INTERVENCIÓN</h2>
+          <p class="bloque-lugares__bajada">El Programa está destinado a:</p>
+
+          <ul class="bloque-lugares__lista">
+            <li class="lugar">
+              <span class="lugar__icono"><img loading="lazy" src="img/Escuela_Especial.png" width="114" height="108" alt="" class="lugar__img"></span>
+              <span class="lugar__nombre">ESCUELAS<br>ESPECIALES</span>
+            </li>
+            <li class="lugar">
+              <span class="lugar__icono"><img loading="lazy" src="img/CentroDeSalud.png" width="101" height="96" alt="" class="lugar__img"></span>
+              <span class="lugar__nombre">CENTRO DE<br>SALUD</span>
+            </li>
+            <li class="lugar">
+              <span class="lugar__icono"><img loading="lazy" src="img/DependenciaMunicipales.png" width="107" height="102" alt="" class="lugar__img"></span>
+              <span class="lugar__nombre">DEPENDENCIAS<br>MUNICIPALES</span>
+            </li>
+            <li class="lugar">
+              <span class="lugar__icono"><img loading="lazy" src="img/icono-ongs.png" width="104" height="99" alt="" class="lugar__img"></span>
+              <span class="lugar__nombre">ONGs DE<br>LA CIUDAD</span>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="figura-ilustracion figura-ilustracion--grande figura-ilustracion--imagen">
+          <img loading="lazy" src="img/iaca-veterinaria.png" width="722" height="481" alt="Ilustración de una veterinaria revisando a un perro con un estetoscopio" class="figura-ilustracion__img">
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================== -->
+  <!-- PIE DE PÁGINA Y LÍNEAS DE EMERGENCIA                     -->
+  <!-- ======================================================== -->
+  <footer class="footer">
+    <div class="footer__contenedor">
+      <nav class="footer__redes" aria-label="Redes sociales oficiales del Municipio">
+        <ul class="redes-sociales redes-sociales--centradas">
+          <li class="redes-sociales__item"><a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Canal oficial de WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Página oficial de Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial de Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial de X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <aside class="lineas-emergencia" aria-label="Teléfonos útiles y números de emergencia">
+      <div class="lineas-emergencia__contenedor">
+        <ul class="lineas-emergencia__lista">
+          <li class="lineas-emergencia__item"><a href="tel:103" class="lineas-emergencia__enlace">103 Defensa Civil</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:144" class="lineas-emergencia__enlace">144 Violencia de Género</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:911" class="lineas-emergencia__enlace">911 Policía</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:109" class="lineas-emergencia__enlace">109 Salud Mental</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:102" class="lineas-emergencia__enlace">102 Niños en Riesgo</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:147" class="lineas-emergencia__enlace">147 Atención al Vecino</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:107" class="lineas-emergencia__enlace">107 Emergencias Médicas</a></li>
+        </ul>
+      </div>
+    </aside>
+  </footer>
+
+
+  <!-- Chat Zoo flotante -->
+  <aside class="chat-zoo-flotante" aria-label="Asistente flotante Chat Zoo">
+    <button onclick="toggleChatZoo()" class="chat-zoo-flotante__boton" type="button" aria-label="Abrir asistente virtual Chat Zoo">
+      <img src="img/chat-zoo.png" width="118" height="116" alt="" class="chat-zoo-flotante__img chat-zoo-flotante__img--base">
+      <img src="img/chat-zoo-hover.png" width="121" height="116" alt="" class="chat-zoo-flotante__img chat-zoo-flotante__img--hover">
+    </button>
+  </aside>
+  <!-- Documentación flotante (izquierda) -->
+  <aside class="doc-flotante" aria-label="Acceso flotante a Documentación">
+    <a href="documentacion.html" class="doc-flotante__boton" aria-label="Ir a Documentación">
+      <img src="img/Documentacion.png" width="307" height="99" alt="Documentación" class="doc-flotante__img doc-flotante__img--base">
+      <img src="img/Documentacion-hover.png" width="307" height="99" alt="" class="doc-flotante__img doc-flotante__img--hover">
+    </a>
+  </aside>
+
+  <div id="chatZooWidget" class="chat-zoo-widget" role="complementary" aria-label="Ventana de Chat Zoonosis">
+    <div class="chat-zoo-widget__header">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <i class="fa-solid fa-paw" style="color:var(--BOTON-ACCIONADO);"></i>
+        <strong style="font-size:0.85rem;">Chat Zoo — Zoonosis MDQ</strong>
+      </div>
+      <button onclick="toggleChatZoo()" style="background:none; border:none; color:#fff; cursor:pointer;" aria-label="Cerrar chat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="chat-zoo-widget__mensajes" id="chatZooMensajes">
+      <div class="chat-zoo-widget__mensaje chat-zoo-widget__mensaje--bot">
+        ¡Hola! 🐾 Te doy la bienvenida al asistente virtual de <strong>Zoonosis y Bienestar Animal</strong> de Mar del Plata. ¿En qué trámite o consulta te puedo ayudar hoy?
+      </div>
+    </div>
+    <div class="chat-zoo-widget__input-caja">
+      <input type="text" id="chatZooInput" placeholder="Escribí sobre castración, vacunas..." class="chat-zoo-widget__input" onkeydown="if(event.key==='Enter') enviarMensajeChat()">
+      <button onclick="enviarMensajeChat()" class="boton" style="padding:0.4rem 0.8rem; border-radius:50%;" aria-label="Enviar mensaje">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <script>
+    // Menú hamburguesa (mobile)
+    const botonHamburguesa = document.getElementById('botonHamburguesa');
+    const menuPrincipal = document.getElementById('menuPrincipal');
+
+    function setMenu(abierto) {
+      menuPrincipal.classList.toggle('header__nav--abierto', abierto);
+      botonHamburguesa.classList.toggle('header__hamburguesa--activa', abierto);
+      botonHamburguesa.setAttribute('aria-expanded', abierto);
+      botonHamburguesa.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+    }
+
+    botonHamburguesa.addEventListener('click', () => {
+      setMenu(!menuPrincipal.classList.contains('header__nav--abierto'));
+    });
+    menuPrincipal.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+    window.matchMedia('(min-width: 1001px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
+
+    // Chat Zoo
+    const chatZooWidget = document.getElementById('chatZooWidget');
+    const chatZooMensajes = document.getElementById('chatZooMensajes');
+    const chatZooInput = document.getElementById('chatZooInput');
+
+    function toggleChatZoo() {
+      chatZooWidget.classList.toggle('chat-zoo-widget--activo');
+      if (chatZooWidget.classList.contains('chat-zoo-widget--activo')) chatZooInput.focus();
+    }
+
+    function enviarMensajeChat() {
+      const texto = chatZooInput.value.trim();
+      if (!texto) return;
+
+      const userMsg = document.createElement('div');
+      userMsg.className = 'chat-zoo-widget__mensaje chat-zoo-widget__mensaje--user';
+      userMsg.innerText = texto;
+      chatZooMensajes.appendChild(userMsg);
+      chatZooInput.value = '';
+
+      setTimeout(() => {
+        const botMsg = document.createElement('div');
+        botMsg.className = 'chat-zoo-widget__mensaje chat-zoo-widget__mensaje--bot';
+        const t = texto.toLowerCase();
+        if (t.includes('castra') || t.includes('turno')) {
+          botMsg.innerHTML = "Los turnos de castración se solicitan en la web oficial de la Municipalidad o llamando al <strong>147</strong>.";
+        } else if (t.includes('vacuna') || t.includes('rabia')) {
+          botMsg.innerHTML = "La vacunación antirrábica es gratuita y sin turno en la sede de Zoonosis (Hernandarias y Canesi) de lun a vie de 8 a 13 hs.";
+        } else if (t.includes('denuncia') || t.includes('maltrato')) {
+          botMsg.innerHTML = "Si presenciás maltrato en el momento llamá al <strong>911</strong>. Para denuncias de vía pública comunicate al <strong>147</strong>.";
+        } else {
+          botMsg.innerHTML = "Podés comunicarte gratuitamente a la línea <strong>147</strong> de Atención al Vecino para asesorarte.";
+        }
+        chatZooMensajes.appendChild(botMsg);
+        chatZooMensajes.scrollTop = chatZooMensajes.scrollHeight;
+      }, 350);
+    }
+  </script>
+
+</body>
+</html>

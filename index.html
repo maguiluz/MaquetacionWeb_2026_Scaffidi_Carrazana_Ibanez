@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoonosis y Bienestar Animal — Municipalidad de General Pueyrredon</title>
+  
+  <!-- Fuente Inter desde Google Fonts -->
+  <link rel="icon" type="image/png" href="img/logo-mardelplata.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 (Íconos vectoriales oficiales de redes sociales y UI) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Hoja de estilos calibrada con el prototipo -->
+  <link rel="stylesheet" href="styles.css?v=2">
+  <!-- Mejora progresiva: marca que hay JavaScript (el menú móvil solo se colapsa si hay JS) -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="pagina">
+
+  <!-- ======================================================== -->
+  <!-- 1. ENCABEZADO INSTITUCIONAL                              -->
+  <!-- ======================================================== -->
+  <header class="header">
+    <div class="header__contenedor">
+      
+      <!-- Logotipo Oficial Mar del Plata -->
+      <a href="#" class="header__logo" aria-label="Inicio - Municipalidad de Mar del Plata">
+        <img src="img/logo-mardelplata.png" width="69" height="69" alt="Logotipo de la Municipalidad de Mar del Plata" class="header__logo-img" >
+      </a>
+
+      <!-- Barra de navegación principal -->
+      <nav class="header__nav" id="menuPrincipal" aria-label="Menú principal de navegación">
+        <ul class="header__nav-lista">
+          <li class="header__nav-item">
+            <a href="#inicio" class="header__nav-enlace header__nav-enlace--activo">Inicio</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#tasas" class="header__nav-enlace">Tasas</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#noticias" class="header__nav-enlace">Noticias</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#mapa" class="header__nav-enlace">Mapa</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#servicios" class="header__nav-enlace">Servicios</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#turismo" class="header__nav-enlace">Turismo</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#mdqdigital" class="header__nav-enlace">MDQDigital</a>
+          </li>
+        </ul>
+
+        <!-- Redes dentro del menú (solo visibles en mobile) -->
+        <ul class="redes-sociales header__nav-redes">
+          <li class="redes-sociales__item">
+            <a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de contacto"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Facebook institucional"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial en X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Canales de comunicación y redes sociales oficiales -->
+      <div class="header__redes">
+        <ul class="redes-sociales">
+          <li class="redes-sociales__item">
+            <a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de contacto">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span class="visually-hidden">WhatsApp</span>
+            </a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Facebook institucional">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial en X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              <span class="visually-hidden">X (Twitter)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Botón hamburguesa (solo visible en mobile) -->
+      <button class="header__hamburguesa" id="botonHamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="header__hamburguesa-linea"></span>
+        <span class="header__hamburguesa-linea"></span>
+        <span class="header__hamburguesa-linea"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- ======================================================== -->
+  <!-- CONTENIDO PRINCIPAL                                      -->
+  <!-- ======================================================== -->
+  <main class="principal" id="inicio">
+
+    <!-- ====================================================== -->
+    <!-- 2. HERO / ACCESOS PRINCIPALES                          -->
+    <!-- ====================================================== -->
+    <section class="hero-servicios" id="servicios" aria-labelledby="titulo-principal">
+      <div class="hero-servicios__contenedor">
+        
+        <!-- Título principal oficial -->
+        <h1 class="hero-servicios__titulo" id="titulo-principal">
+          ZOONOSIS Y<br>BIENESTAR ANIMAL
+        </h1>
+
+        <!-- 4 Tarjetas de Accesos Rápidos con los íconos de imagen oficiales -->
+        <div class="hero-servicios__grilla">
+          
+          <!-- Trámite 1: Vacunación Antirrábica (icono-vacunacion.png) -->
+          <article class="tarjeta-tramite">
+            <a href="javascript:void(0)" onclick="openModal('vacunacion')" class="tarjeta-tramite__enlace" aria-label="Información sobre Vacunación Antirrábica">
+              <div class="tarjeta-tramite__cuerpo">
+                <img src="img/icono-vacunacion.png" width="88" height="80" alt="Ícono de jeringa para Vacunación Antirrábica" class="tarjeta-tramite__icono-img" >
+                <h3 class="tarjeta-tramite__titulo">VACUNACIÓN<br>ANTIRRÁBICA</h3>
+              </div>
+              <span class="tarjeta-tramite__indicador" aria-hidden="true"></span>
+            </a>
+          </article>
+
+          <!-- Trámite 2: Castraciones (icono-castraciones.png) -->
+          <article class="tarjeta-tramite">
+            <a href="castraciones.html" class="tarjeta-tramite__enlace" aria-label="Información sobre Castraciones">
+              <div class="tarjeta-tramite__cuerpo">
+                <img src="img/icono-castraciones.png" width="101" height="93" alt="Ícono de perro para Castraciones" class="tarjeta-tramite__icono-img" >
+                <h3 class="tarjeta-tramite__titulo">CASTRACIONES</h3>
+              </div>
+              <span class="tarjeta-tramite__indicador" aria-hidden="true"></span>
+            </a>
+          </article>
+
+          <!-- Trámite 3: Centro Antirrábico Humano (icono-antirabico.png) -->
+          <article class="tarjeta-tramite">
+            <a href="javascript:void(0)" onclick="openModal('antirrabico')" class="tarjeta-tramite__enlace" aria-label="Información sobre Centro Antirrábico Humano">
+              <div class="tarjeta-tramite__cuerpo">
+                <img src="img/icono-antirabico.png" width="95" height="94" alt="Ícono de escudo biológico para Centro Antirrábico Humano" class="tarjeta-tramite__icono-img" >
+                <h3 class="tarjeta-tramite__titulo">CENTRO<br>ANTIRRÁVICO<br>HUMANO</h3>
+              </div>
+              <span class="tarjeta-tramite__indicador" aria-hidden="true"></span>
+            </a>
+          </article>
+
+          <!-- Trámite 4: IACA (icono-iaca.png) -->
+          <article class="tarjeta-tramite">
+            <a href="iaca.html" class="tarjeta-tramite__enlace" aria-label="Información sobre IACA">
+              <div class="tarjeta-tramite__cuerpo">
+                <img src="img/icono-iaca.png" width="99" height="95" alt="Ícono de mano con huella para IACA" class="tarjeta-tramite__icono-img" >
+                <h3 class="tarjeta-tramite__titulo">IACA</h3>
+              </div>
+              <span class="tarjeta-tramite__indicador" aria-hidden="true"></span>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- 3. DENUNCIAS: NO MIREMOS A OTRO LADO                   -->
+    <!-- ====================================================== -->
+    <section class="denuncias" id="denuncias" aria-labelledby="titulo-denuncias">
+      
+      <!-- Patitas alzadas en los bordes inferiores del banner -->
+      <div class="denuncias__patas denuncias__patas--izquierda" aria-hidden="true">
+        <img loading="lazy" src="img/patas-izquierda.png" width="459" height="293" alt="" class="denuncias__patas-img">
+      </div>
+
+      <div class="denuncias__patas denuncias__patas--derecha" aria-hidden="true">
+        <img loading="lazy" src="img/patas-derecha.png" width="430" height="293" alt="" class="denuncias__patas-img">
+      </div>
+
+      <div class="denuncias__contenedor">
+
+        <!-- Contenido textual y botones -->
+        <div class="denuncias__contenido">
+          <h2 class="denuncias__titulo" id="titulo-denuncias">NO MIREMOS A OTRO LADO</h2>
+          <p class="denuncias__descripcion">
+            Proteger a los animales es una responsabilidad de todos y una obligación legal. Si sos testigo de situaciones de crueldad, abandono o negligencia, no mires para otro lado: conocé tus derechos, informate sobre cómo actuar y realizá la denuncia para que las autoridades puedan intervenir de inmediato.
+          </p>
+          <div class="denuncias__acciones">
+            <button class="boton" type="button">Denuncias</button>
+            <button class="boton" type="button">Maltrato animal</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- 4. ADOPCIONES Y HOGAR DE TRÁNSITO                     -->
+    <!-- ====================================================== -->
+    <section class="bloque-editorial" id="adopciones" aria-labelledby="titulo-adopciones">
+      <div class="bloque-editorial__contenedor">
+        
+        <!-- Ilustración en caja púrpura auténtica -->
+        <figure class="bloque-editorial__figura bloque-editorial__figura--casita">
+          <img loading="lazy" src="img/adopciones-casita.png" width="420" height="385" alt="Ilustración de casita de perro con gato descansando en el techo y cachorro adentro" class="bloque-editorial__imagen">
+        </figure>
+
+        <!-- Texto y botón -->
+        <div class="bloque-editorial__contenido">
+          <h2 class="bloque-editorial__titulo" id="titulo-adopciones">ADOPCIONES Y HOGAR DE TRANSITO</h2>
+          <p class="bloque-editorial__parrafo">
+            Adoptar es sumar un compañero a tu vida y comprometerte a cuidarlo todos los días. Acá podés conocer a los perritos que esperan una familia, descubrir cómo ofrecerles un hogar de tránsito hasta que sean adoptados e informarte sobre la adopción de equinos.
+          </p>
+          <div class="bloque-editorial__accion">
+            <button class="boton" type="button">Ver más</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- 5. TU MASCOTA HÉROE                                    -->
+    <!-- ====================================================== -->
+    <section class="bloque-editorial" id="mascota-heroe" aria-labelledby="titulo-mascota-heroe">
+      <div class="bloque-editorial__contenedor">
+        
+        <!-- Texto y botón -->
+        <div class="bloque-editorial__contenido">
+          <h2 class="bloque-editorial__titulo" id="titulo-mascota-heroe">TU MASCOTA HÉROE</h2>
+          <p class="bloque-editorial__parrafo">
+            Tu compañero también puede dar una mano!<br>
+            En General Pueyrredon ya está en marcha la campaña "Tu mascota héroe" (Ordenanza 25922), impulsada junto a Zoonosis y Bienestar Animal, con veterinarias habilitadas para recibir donaciones de sangre gratuitas de animales.
+          </p>
+          <div class="bloque-editorial__accion">
+            <button class="boton" type="button">Ver más</button>
+          </div>
+        </div>
+
+        <!-- Ilustración en caja púrpura auténtica -->
+        <figure class="bloque-editorial__figura bloque-editorial__figura--heroe">
+          <img loading="lazy" src="img/mascotas-superheroes.png" width="584" height="389" alt="Ilustración de perro con capa estilo Superman y gato con máscara y capa estilo Batman" class="bloque-editorial__imagen">
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- 6. INFORMACIÓN ÚTIL                                    -->
+    <!-- ====================================================== -->
+    <section class="informacion-util" id="informacion-util" aria-labelledby="titulo-informacion-util">
+      <div class="informacion-util__contenedor">
+        
+        <h2 class="informacion-util__titulo" id="titulo-informacion-util">INFORMACIÓN ÚTIL</h2>
+
+        <div class="informacion-util__grilla">
+          
+          <!-- Tarjeta 1: Tenencia Responsable -->
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">TENENCIA<br>RESPONSABLE</h3>
+              <p class="tarjeta-info__descripcion">
+                Consejos sobre educación, socialización, controles sanitarios, castración, pautas de convivencia, qué hacer ante mordeduras y otros datos importantes
+              </p>
+            </div>
+            <footer class="tarjeta-info__pie">
+              <button class="boton" type="button">Leer más</button>
+            </footer>
+          </article>
+
+          <!-- Tarjeta 2: Perros Potencialmente Peligrosos -->
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">PERROS POTENCIALMENTE PELIGROSOS</h3>
+              <p class="tarjeta-info__descripcion">
+                Enterate de qué dice la Ordenanza 22.031, qué razas entran en la categoría y cómo hacer el trámite del chip y la credencial para andar en la calle.
+              </p>
+            </div>
+            <footer class="tarjeta-info__pie">
+              <button class="boton" type="button">Leer más</button>
+            </footer>
+          </article>
+
+          <!-- Tarjeta 3: Recomendaciones ante un Murciélago -->
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">RECOMENDACIONES ANTE UN MURCIELAGO</h3>
+              <p class="tarjeta-info__descripcion">
+                Consejos clave sobre cómo actuar si encontrás uno, qué hacer ante una mordedura a personas o animales, y los datos de contacto de Zoonosis y el Centro Antirrábico.
+              </p>
+            </div>
+            <footer class="tarjeta-info__pie">
+              <button class="boton" type="button">Leer más</button>
+            </footer>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- 7. REGISTRO DE PASEADORES Y ADIESTRADORES              -->
+    <!-- ====================================================== -->
+    <section class="bloque-editorial" id="paseadores" aria-labelledby="titulo-paseadores">
+      <div class="bloque-editorial__contenedor">
+        
+        <!-- Ilustración en caja púrpura auténtica -->
+        <figure class="bloque-editorial__figura bloque-editorial__figura--perro">
+          <img loading="lazy" src="img/perro-paseando.png" width="579" height="472" alt="Ilustración de un perro trotando alegre con correa roja" class="bloque-editorial__imagen">
+        </figure>
+
+        <!-- Texto y botón -->
+        <div class="bloque-editorial__contenido">
+          <h2 class="bloque-editorial__titulo" id="titulo-paseadores">REGISTRO DE<br>PASEADORES Y ADIESTRADORES</h2>
+          <p class="bloque-editorial__parrafo">
+            ¿Querés trabajar paseando o entrenando perritos? Enterate de los requisitos obligatorios para sumarte al registro municipal, desde la presentación de tu CV hasta la acreditación de idoneidad ante Zoonosis y el Colegio de Veterinarios.
+          </p>
+          <div class="bloque-editorial__accion">
+            <button class="boton" type="button">Ver más</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================== -->
+  <!-- 8. PIE DE PÁGINA Y LÍNEAS DE EMERGENCIA                  -->
+  <!-- ======================================================== -->
+  <footer class="footer">
+    <div class="footer__contenedor">
+
+      <!-- Redes sociales institucionales -->
+      <nav class="footer__redes" aria-label="Redes sociales oficiales del Municipio">
+        <ul class="redes-sociales redes-sociales--centradas">
+          <li class="redes-sociales__item">
+            <a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Canal oficial de WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span class="visually-hidden">WhatsApp</span>
+            </a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Página oficial de Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial de Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="redes-sociales__item">
+            <a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial de X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              <span class="visually-hidden">X</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <!-- Barra de teléfonos de emergencia municipal -->
+    <aside class="lineas-emergencia" id="emergencias" aria-label="Teléfonos útiles y números de emergencia">
+      <div class="lineas-emergencia__contenedor">
+        <ul class="lineas-emergencia__lista">
+          <li class="lineas-emergencia__item">
+            <a href="tel:103" class="lineas-emergencia__enlace">103 Defensa Civil</a>
+          </li>
+          <li class="lineas-emergencia__item">
+            <a href="tel:144" class="lineas-emergencia__enlace">144 Violencia de Género</a>
+          </li>
+          <li class="lineas-emergencia__item">
+            <a href="tel:911" class="lineas-emergencia__enlace">911 Policía</a>
+          </li>
+          <li class="lineas-emergencia__item">
+            <a href="tel:109" class="lineas-emergencia__enlace">109 Salud Mental</a>
+          </li>
+          <li class="lineas-emergencia__item">
+            <a href="tel:102" class="lineas-emergencia__enlace">102 Niños en Riesgo</a>
+          </li>
+          <li class="lineas-emergencia__item">
+            <a href="tel:147" class="lineas-emergencia__enlace">147 Atención al Vecino</a>
+          </li>
+          <li class="lineas-emergencia__item">
+            <a href="tel:107" class="lineas-emergencia__enlace">107 Emergencias Médicas</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+  </footer>
+
+
+  <!-- ======================================================== -->
+  <!-- CHAT ZOO FLOTANTE PERMANENTE                             -->
+  <!-- (Acompaña al usuario en todo el recorrido de la página) -->
+  <!-- ======================================================== -->
+  <aside class="chat-zoo-flotante" aria-label="Asistente flotante Chat Zoo">
+    <button onclick="toggleChatZoo()" class="chat-zoo-flotante__boton" type="button" aria-label="Abrir asistente virtual Chat Zoo">
+      <img src="img/chat-zoo.png" width="118" height="116" alt="" class="chat-zoo-flotante__img chat-zoo-flotante__img--base">
+      <img src="img/chat-zoo-hover.png" width="121" height="116" alt="" class="chat-zoo-flotante__img chat-zoo-flotante__img--hover">
+    </button>
+  </aside>
+  <!-- Documentación flotante (izquierda) -->
+  <aside class="doc-flotante" aria-label="Acceso flotante a Documentación">
+    <a href="documentacion.html" class="doc-flotante__boton" aria-label="Ir a Documentación">
+      <img src="img/Documentacion.png" width="307" height="99" alt="Documentación" class="doc-flotante__img doc-flotante__img--base">
+      <img src="img/Documentacion-hover.png" width="307" height="99" alt="" class="doc-flotante__img doc-flotante__img--hover">
+    </a>
+  </aside>
+
+  <!-- Ventana interactiva desplegable de Chat Zoo -->
+  <div id="chatZooWidget" class="chat-zoo-widget" role="complementary" aria-label="Ventana de Chat Zoonosis">
+    <div class="chat-zoo-widget__header">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <i class="fa-solid fa-paw" style="color:var(--BOTON-ACCIONADO);"></i>
+        <strong style="font-size:0.85rem;">Chat Zoo — Zoonosis MDQ</strong>
+      </div>
+      <button onclick="toggleChatZoo()" style="background:none; border:none; color:#fff; cursor:pointer;" aria-label="Cerrar chat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="chat-zoo-widget__mensajes" id="chatZooMensajes">
+      <div class="chat-zoo-widget__mensaje chat-zoo-widget__mensaje--bot">
+        ¡Hola! 🐾 Te doy la bienvenida al asistente virtual de <strong>Zoonosis y Bienestar Animal</strong> de Mar del Plata. ¿En qué trámite o consulta te puedo ayudar hoy?
+      </div>
+    </div>
+
+    <div class="chat-zoo-widget__input-caja">
+      <input type="text" id="chatZooInput" placeholder="Escribí sobre castración, vacunas..." class="chat-zoo-widget__input" onkeydown="if(event.key==='Enter') enviarMensajeChat()">
+      <button onclick="enviarMensajeChat()" class="boton" style="padding:0.4rem 0.8rem; border-radius:50%;" aria-label="Enviar mensaje">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- MODAL INFORMATIVO ACCESIBLE                              -->
+  <!-- ======================================================== -->
+  <div id="infoModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__tarjeta">
+      <button onclick="closeModal()" class="modal__cerrar" aria-label="Cerrar ventana emergente">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+
+      <div class="modal__encabezado">
+        <div class="modal__icono" id="modalIcon">
+          <i class="fa-solid fa-paw" aria-hidden="true"></i>
+        </div>
+        <h3 class="modal__titulo" id="modalTitle">Información</h3>
+      </div>
+
+      <div class="modal__cuerpo" id="modalBody">
+        Contenido informativo.
+      </div>
+
+      <div class="modal__pie">
+        <button onclick="closeModal()" class="boton" style="background:#e2e8f0; color:#334155;" type="button">Cerrar</button>
+        <a id="modalActionBtn" href="tel:147" class="boton">Llamar al 147</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- JAVASCRIPT DE INTERACTIVIDAD                             -->
+  <!-- ======================================================== -->
+  <script>
+    // Menú hamburguesa (mobile)
+    const botonHamburguesa = document.getElementById('botonHamburguesa');
+    const menuPrincipal = document.getElementById('menuPrincipal');
+
+    function setMenu(abierto) {
+      menuPrincipal.classList.toggle('header__nav--abierto', abierto);
+      botonHamburguesa.classList.toggle('header__hamburguesa--activa', abierto);
+      botonHamburguesa.setAttribute('aria-expanded', abierto);
+      botonHamburguesa.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+    }
+
+    botonHamburguesa.addEventListener('click', () => {
+      setMenu(!menuPrincipal.classList.contains('header__nav--abierto'));
+    });
+    menuPrincipal.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+    window.matchMedia('(min-width: 1001px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
+
+    const modalData = {
+      vacunacion: {
+        title: "Vacunación Antirrábica",
+        icon: '<i class="fa-solid fa-syringe"></i>',
+        btnText: "Cronograma Barrial",
+        btnUrl: "#cronograma",
+        sinPie: true,
+        body: `
+          <p><strong>Puestos fijos (Lun a Sáb | 8 a 13 hs):</strong></p>
+          <ul>
+            <li>Hernandarias 10200</li>
+             <li>Canesa esq. Guanahani</li>
+          </ul>
+          <p style="margin-top: 20px;"><strong>Próximas jornadas itinerantes (9 a 12 hs):</strong></p>
+           <ul>
+            <li><strong>Vie 20/11:</strong> Soc. de Fomento El Progreso<br>(Tripulantes del Fournier 5450)</li>
+            <li><strong>Jue 26/11:</strong> Soc. de Fomento Autódromo<br>(Virrey del Pino y Rosales)</li>
+            <li><strong>Vie 27/11:</strong> Soc. de Fomento B° Parque Las Dalias<br>(Los Talas 3757)</li>
+            <li><strong>Mar a Jue (10 a 12 hs):</strong> Delegación Batán<br>(Av. Centenario y 155)</li>
+          </ul>
+        `
+
+      },
+      castraciones: {
+        title: "Castraciones Gratuitas",
+        icon: '<i class="fa-solid fa-scissors"></i>',
+        btnText: "Solicitar Turno",
+        btnUrl: "https://www.mardelplata.gob.ar/",
+        body: `
+          <p>La esterilización quirúrgica de hembras y machos es un servicio municipal gratuito para prevenir la sobrepoblación y enfermedades.</p>
+          <ul>
+            <li>DNI con domicilio en el Partido de General Pueyrredon.</li>
+            <li>Ayuno previo: 12 hs de sólidos y 6 hs de líquidos.</li>
+            <li>Traer manta para el despertar postoperatorio.</li>
+          </ul>
+        `
+      },
+      antirrabico: {
+        title: "Centro Antirrábico Humano",
+        icon: '<i class="fa-solid fa-shield-virus"></i>',
+        sinPie: true,
+        btnText: "Atención 147",
+        btnUrl: "tel:147",
+        body: `
+          <p><strong>Protocolo ante mordeduras</strong></p>
+          <ol>
+            <li><strong>Primeros auxilios:</strong> Lavá con agua y jabón y cubrí con material limpio.</li>
+            <li><strong>En menos de 24 hs:</strong>Atención médica en el Centro de Salud más cercano.</li>
+            <li><strong>Entre 24 y 72 hs:</strong> Consultorio Antirrábico Humano (Centro de Salud N° 1: Colón y Salta).</li>
+            <li><strong>A tener en cuenta:</strong> Se solicitan tus datos y los del dueño del animal (nombre, dirección y teléfono) para el control de 10 días por Zoonosis (Ley N° 8056). Si no aparece el animal, el consultorio define los pasos a seguir.</li>
+          </ol>
+        `
+          
+
+      },
+      iaca: {
+        title: "IACA - Análisis y Cuidados Animales",
+        icon: '<i class="fa-solid fa-hand-holding-heart"></i>',
+        btnText: "Más Información",
+        btnUrl: "#servicios",
+        body: `
+          <p>Instituto técnico responsable del diagnóstico epidemiológico, vigilancia de zoonosis (rabia, leishmaniasis, triquinosis, leptospirosis) y control sanitario en General Pueyrredon.</p>
+        `
+      },
+      adopciones: {
+        title: "Adopciones y Hogar de Tránsito",
+        icon: '<i class="fa-solid fa-house-chimney-paw"></i>',
+        btnText: "Ver Mascotas",
+        btnUrl: "#adopciones",
+        body: `
+          <p>Conocé a los perritos y gatitos rescatados que buscan una familia responsable. También podés postularte como hogar de tránsito o consultar por la adopción de equinos recuperados.</p>
+        `
+      },
+      mascotaHeroe: {
+        title: "Tu Mascota Héroe - Donación de Sangre",
+        icon: '<i class="fa-solid fa-shield-dog"></i>',
+        btnText: "Registro Oficial",
+        btnUrl: "#",
+        body: `
+          <p>Iniciativa amparada en la <strong>Ordenanza Municipal 25922</strong> que crea el registro de veterinarias habilitadas para donaciones de sangre animal gratuitas en Mar del Plata y Batán.</p>
+        `
+      },
+      tenencia: {
+        title: "Guía de Tenencia\nResponsable",
+        icon: '<i class="fa-solid fa-clipboard-check"></i>',
+        btnText: "Guía Completa",
+        btnUrl: "#",
+        body: `
+          <p>Obligaciones del tutor: alimentación nutritiva, cobijo seguro, plan sanitario al día, paseo siempre con correa y chapa identificatoria, y recolección obligatoria de heces en la vía pública.</p>
+          <p>Consejos sobre educación, socialización, controles sanitarios, castración, pautas de convivencia, qué hacer ante mordeduras y otros datos importantes.</p>
+        `
+      },
+      perrosPeligrosos: {
+        title: "Perros Potencialmente Peligrosos",
+        icon: '<i class="fa-solid fa-id-card"></i>',
+        btnText: "Trámite de Registro",
+        btnUrl: "#",
+        body: `
+          <p>Bajo la <strong>Ordenanza 22.031</strong>, los tutores de perros potencialmente peligrosos deben colocarles microchip subcutáneo homologado, tramitar la credencial y circular en la calle siempre con correa corta y bozal.</p>
+        `
+      },
+      murcielagos: {
+        title: "Protocolo ante un Murciélago",
+        icon: '<i class="fa-solid fa-biohazard"></i>',
+        btnText: "Llamar a Zoonosis",
+        btnUrl: "tel:147",
+        body: `
+          <p><strong>NUNCA tocarlo con las manos desnudas.</strong> Cubrirlo con un balde o caja sin lastimarlo y llamar al 147 para que personal especializado lo retire y analice ante riesgo de rabia.</p>
+        `
+      },
+      paseadores: {
+        title: "Registro de Paseadores y Adiestradores",
+        icon: '<i class="fa-solid fa-graduation-cap"></i>',
+        btnText: "Inscribirse",
+        btnUrl: "#",
+        body: `
+          <p>Requisitos: DNI, certificado de antecedentes penales, CV con cursos de capacitación aprobados, acreditación de idoneidad ante Zoonosis y el Colegio de Veterinarios, y respetar el cupo máximo de perros por paseo.</p>
+        `
+      }
+    };
+
+    const modal = document.getElementById('infoModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalIcon = document.getElementById('modalIcon');
+    const modalBody = document.getElementById('modalBody');
+    const modalActionBtn = document.getElementById('modalActionBtn');
+
+    function openModal(key) {
+      const data = modalData[key];
+      if (!data) return;
+      modalTitle.innerText = data.title;
+      modalIcon.innerHTML = data.icon;
+      modalBody.innerHTML = data.body;
+      modalActionBtn.innerText = data.btnText;
+      modalActionBtn.href = data.btnUrl;
+      document.querySelector('.modal__pie').style.display = 'none';
+      modal.classList.add('modal--activo');
+    }
+
+    function closeModal() {
+      modal.classList.remove('modal--activo');
+    }
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    // Chat Zoo Toggle y Mensajería
+    const chatZooWidget = document.getElementById('chatZooWidget');
+    const chatZooMensajes = document.getElementById('chatZooMensajes');
+    const chatZooInput = document.getElementById('chatZooInput');
+
+    function toggleChatZoo() {
+      chatZooWidget.classList.toggle('chat-zoo-widget--activo');
+      if (chatZooWidget.classList.contains('chat-zoo-widget--activo')) {
+        chatZooInput.focus();
+      }
+    }
+
+    function enviarMensajeChat() {
+      const texto = chatZooInput.value.trim();
+      if (!texto) return;
+
+      const userMsg = document.createElement('div');
+      userMsg.className = 'chat-zoo-widget__mensaje chat-zoo-widget__mensaje--user';
+      userMsg.innerText = texto;
+      chatZooMensajes.appendChild(userMsg);
+      chatZooInput.value = '';
+
+      setTimeout(() => {
+        const botMsg = document.createElement('div');
+        botMsg.className = 'chat-zoo-widget__mensaje chat-zoo-widget__mensaje--bot';
+        const t = texto.toLowerCase();
+        if (t.includes('castra') || t.includes('turno')) {
+          botMsg.innerHTML = "Los turnos de castración se solicitan en la web oficial de la Municipalidad o llamando al <strong>147</strong>.";
+        } else if (t.includes('vacuna') || t.includes('rabia')) {
+          botMsg.innerHTML = "La vacunación antirrábica es gratuita y sin turno en la sede de Zoonosis (Hernandarias y Canesi) de lun a vie de 8 a 13 hs.";
+        } else if (t.includes('denuncia') || t.includes('maltrato')) {
+          botMsg.innerHTML = "Si presenciás maltrato en el momento llamá al <strong>911</strong>. Para denuncias de vía pública comunicate al <strong>147</strong>.";
+        } else {
+          botMsg.innerHTML = "Podés comunicarte gratuitamente a la línea <strong>147</strong> de Atención al Vecino para asesorarte.";
+        }
+        chatZooMensajes.appendChild(botMsg);
+        chatZooMensajes.scrollTop = chatZooMensajes.scrollHeight;
+      }, 350);
+    }
+  </script>
+
+</body>
+</html>

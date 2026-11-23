@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castraciones — Zoonosis y Bienestar Animal — Municipalidad de General Pueyrredon</title>
+  <link rel="icon" type="image/png" href="img/logo-mardelplata.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css?v=2">
+  <!-- Mejora progresiva: marca que hay JavaScript (el menú móvil solo se colapsa si hay JS) -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="pagina">
+
+  <!-- ======================================================== -->
+  <!-- ENCABEZADO INSTITUCIONAL (igual al de la página principal) -->
+  <!-- ======================================================== -->
+  <header class="header">
+    <div class="header__contenedor">
+
+      <a href="index.html" class="header__logo" aria-label="Inicio - Municipalidad de Mar del Plata">
+        <img src="img/logo-mardelplata.png" width="69" height="69" alt="Logotipo de la Municipalidad de Mar del Plata" class="header__logo-img">
+      </a>
+
+      <nav class="header__nav" id="menuPrincipal" aria-label="Menú principal de navegación">
+        <ul class="header__nav-lista">
+          <li class="header__nav-item"><a href="index.html#inicio" class="header__nav-enlace">Inicio</a></li>
+          <li class="header__nav-item"><a href="index.html#tasas" class="header__nav-enlace">Tasas</a></li>
+          <li class="header__nav-item"><a href="index.html#noticias" class="header__nav-enlace">Noticias</a></li>
+          <li class="header__nav-item"><a href="index.html#mapa" class="header__nav-enlace">Mapa</a></li>
+          <li class="header__nav-item"><a href="index.html#servicios" class="header__nav-enlace">Servicios</a></li>
+          <li class="header__nav-item"><a href="index.html#turismo" class="header__nav-enlace">Turismo</a></li>
+          <li class="header__nav-item"><a href="index.html#mdqdigital" class="header__nav-enlace">MDQDigital</a></li>
+        </ul>
+
+        <ul class="redes-sociales header__nav-redes">
+          <li class="redes-sociales__item"><a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de contacto"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Facebook institucional"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial en X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+
+      <div class="header__redes">
+        <ul class="redes-sociales">
+          <li class="redes-sociales__item"><a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de contacto"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Facebook institucional"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial en X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <button class="header__hamburguesa" id="botonHamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="header__hamburguesa-linea"></span>
+        <span class="header__hamburguesa-linea"></span>
+        <span class="header__hamburguesa-linea"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main class="principal">
+
+    <!-- ====================================================== -->
+    <!-- TÍTULO Y ACCESOS RÁPIDOS                               -->
+    <!-- ====================================================== -->
+    <section class="hero-pagina hero-pagina--accesos" aria-labelledby="titulo-castraciones">
+      <a href="index.html#servicios" class="hero-pagina__volver" aria-label="Volver a Zoonosis y Bienestar Animal">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </a>
+      <div class="hero-pagina__contenedor">
+        <h1 class="hero-pagina__titulo" id="titulo-castraciones">CASTRACIONES</h1>
+      </div>
+
+      <div class="grilla-tramites">
+        <article class="tarjeta-tramite">
+          <a href="#turnos" class="tarjeta-tramite__enlace" aria-label="Ir a la sección Turnos">
+            <div class="tarjeta-tramite__cuerpo">
+              <img src="img/icono-turnos.png" width="78" height="80" alt="" class="tarjeta-tramite__icono-img">
+              <h2 class="tarjeta-tramite__titulo">TURNOS</h2>
+            </div>
+            <span class="tarjeta-tramite__indicador" aria-hidden="true"></span>
+          </a>
+        </article>
+
+        <article class="tarjeta-tramite">
+          <a href="#quirofano-movil" class="tarjeta-tramite__enlace" aria-label="Ir a la sección Quirófano Móvil">
+            <div class="tarjeta-tramite__cuerpo">
+              <img src="img/icono-quirofano.png" width="142" height="107" alt="" class="tarjeta-tramite__icono-img">
+              <h2 class="tarjeta-tramite__titulo">QUIRÓFANO<br>MÓVIL</h2>
+            </div>
+            <span class="tarjeta-tramite__indicador" aria-hidden="true"></span>
+          </a>
+        </article>
+
+        <article class="tarjeta-tramite">
+          <a href="#requisitos" class="tarjeta-tramite__enlace" aria-label="Ir a la sección Requisitos">
+            <div class="tarjeta-tramite__cuerpo">
+              <img src="img/icono-requisitos.png" width="218" height="262" alt="" class="tarjeta-tramite__icono-img">
+              <h2 class="tarjeta-tramite__titulo">REQUISITOS</h2>
+            </div>
+            <span class="tarjeta-tramite__indicador" aria-hidden="true"></span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- MISIÓN                                                 -->
+    <!-- ====================================================== -->
+    <section class="informacion-util informacion-util--mision" aria-labelledby="titulo-mision">
+      <div class="informacion-util__contenedor">
+        <h2 class="informacion-util__titulo" id="titulo-mision">MISIÓN</h2>
+        <p class="informacion-util__mision">
+          Brindarle a los vecinos y las vecinas del Partido de General Pueyrredon las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia pacífica, comprometida y responsable de las mascotas y sus tenedores en el espacio público y en sus hogares.
+        </p>
+
+        <div class="informacion-util__grilla">
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">¿Por qué es importante castrar a tu mascota?</h3>
+              <p class="tarjeta-info__descripcion">La castración es una cirugía que impide la reproducción en perros y gatos, tanto en machos como en hembras. Asimismo, previene enfermedades y promueve una mejor calidad de vida de nuestros animales.</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">¿Cuáles son los beneficios en <strong class="texto-resaltado">machos</strong>?</h3>
+              <p class="tarjeta-info__descripcion">Evita tumores testiculares y previene patologías prostáticas, además de enfermedades de transmisión sexual.<br>Además impide peleas entre machos.</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-info">
+            <div class="tarjeta-info__cuerpo">
+              <h3 class="tarjeta-info__titulo">¿Cuáles son los beneficios en <strong class="texto-resaltado">hembras</strong>?</h3>
+              <p class="tarjeta-info__descripcion">Evita la aparición de tumores y quistes ováricos, pseudopreñez y pseudolactancia. Además, previene enfermedades del útero y de transmisión sexual. Además impide fugas en épocas de celo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- CÓMO SOLICITO EL TURNO                                 -->
+    <!-- ====================================================== -->
+    <section class="bloque-turnos" id="turnos" aria-labelledby="titulo-turnos">
+      <div class="contenedor">
+        <h2 class="titulo-seccion" id="titulo-turnos">¿CÓMO SOLICITO EL TURNO PARA CASTRAR A MI MASCOTA?</h2>
+        <p class="texto-seccion bloque-turnos__intro">Existen dos modalidades para acceder al servicio de esterilización:</p>
+
+        <div class="bloque-turnos__grilla">
+
+          <figure class="figura-ilustracion figura-ilustracion--grande figura-ilustracion--imagen bloque-turnos__figura">
+            <img loading="lazy" src="img/castraciones-gato.png" width="720" height="543" alt="Ilustración de un gato con collar isabelino descansando sobre una manta luego de una castración" class="figura-ilustracion__img">
+          </figure>
+
+          <div class="bloque-turnos__contenido">
+            <div class="bloque-turnos__opcion">
+              <h3 class="bloque-turnos__opcion-titulo">Dirección de Zoonosis y Bienestar Animal (con turno previo)</h3>
+              <p class="texto-seccion">Podés solicitar un turno para castrar a tu mascota a través de MDQ Digital. La atención se realiza en la sede ubicada en Canesa y Guanahani.</p>
+              <button type="button" class="boton boton--separado">Solicitar turno</button>
+            </div>
+
+            <div class="bloque-turnos__opcion" id="quirofano-movil">
+              <h3 class="bloque-turnos__opcion-titulo">Quirófano Móvil de Animales</h3>
+              <p class="texto-seccion">Las castraciones en estas sedes serán por orden de llegada y sin turno previo. Para garantizar la accesibilidad del servicio a todos los vecinos se admitirá sólo un animal por persona y se realizarán 15 castraciones por sede.</p>
+              <button type="button" class="boton boton--separado">Ver más</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- REQUISITOS                                             -->
+    <!-- ====================================================== -->
+    <section class="bloque-requisitos" id="requisitos" aria-labelledby="titulo-requisitos">
+      <div class="contenedor">
+        <h2 class="titulo-seccion" id="titulo-requisitos">REQUISITOS</h2>
+        <p class="texto-seccion">
+          Para que tu mascota pueda ser operada, es necesario cumplir con una serie de requisitos y condiciones previas.<br>
+          Antes de solicitar el turno o acercarte a una sede, informate sobre las indicaciones para garantizar que el procedimiento pueda realizarse de manera segura.
+        </p>
+        <button type="button" class="boton boton--separado">Conocer requisitos</button>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================== -->
+  <!-- PIE DE PÁGINA Y LÍNEAS DE EMERGENCIA                     -->
+  <!-- ======================================================== -->
+  <footer class="footer">
+    <div class="footer__contenedor">
+      <nav class="footer__redes" aria-label="Redes sociales oficiales del Municipio">
+        <ul class="redes-sociales redes-sociales--centradas">
+          <li class="redes-sociales__item"><a href="https://www.whatsapp.com/channel/0029Vb4RHoYJuyAJpDGxtX3j" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Canal oficial de WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.facebook.com/municipalidadmardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Página oficial de Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://www.instagram.com/munimardelplata/" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial de Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="redes-sociales__item"><a href="https://x.com/munimardelplata" class="redes-sociales__enlace" target="_blank" rel="noopener noreferrer" aria-label="Cuenta oficial de X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <aside class="lineas-emergencia" aria-label="Teléfonos útiles y números de emergencia">
+      <div class="lineas-emergencia__contenedor">
+        <ul class="lineas-emergencia__lista">
+          <li class="lineas-emergencia__item"><a href="tel:103" class="lineas-emergencia__enlace">103 Defensa Civil</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:144" class="lineas-emergencia__enlace">144 Violencia de Género</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:911" class="lineas-emergencia__enlace">911 Policía</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:109" class="lineas-emergencia__enlace">109 Salud Mental</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:102" class="lineas-emergencia__enlace">102 Niños en Riesgo</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:147" class="lineas-emergencia__enlace">147 Atención al Vecino</a></li>
+          <li class="lineas-emergencia__item"><a href="tel:107" class="lineas-emergencia__enlace">107 Emergencias Médicas</a></li>
+        </ul>
+      </div>
+    </aside>
+  </footer>
+
+
+  <!-- Chat Zoo flotante -->
+  <aside class="chat-zoo-flotante" aria-label="Asistente flotante Chat Zoo">
+    <button onclick="toggleChatZoo()" class="chat-zoo-flotante__boton" type="button" aria-label="Abrir asistente virtual Chat Zoo">
+      <img src="img/chat-zoo.png" width="118" height="116" alt="" class="chat-zoo-flotante__img chat-zoo-flotante__img--base">
+      <img src="img/chat-zoo-hover.png" width="121" height="116" alt="" class="chat-zoo-flotante__img chat-zoo-flotante__img--hover">
+    </button>
+  </aside>
+  <!-- Documentación flotante (izquierda) -->
+  <aside class="doc-flotante" aria-label="Acceso flotante a Documentación">
+    <a href="documentacion.html" class="doc-flotante__boton" aria-label="Ir a Documentación">
+      <img src="img/Documentacion.png" width="307" height="99" alt="Documentación" class="doc-flotante__img doc-flotante__img--base">
+      <img src="img/Documentacion-hover.png" width="307" height="99" alt="" class="doc-flotante__img doc-flotante__img--hover">
+    </a>
+  </aside>
+
+  <div id="chatZooWidget" class="chat-zoo-widget" role="complementary" aria-label="Ventana de Chat Zoonosis">
+    <div class="chat-zoo-widget__header">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <i class="fa-solid fa-paw" style="color:var(--BOTON-ACCIONADO);"></i>
+        <strong style="font-size:0.85rem;">Chat Zoo — Zoonosis MDQ</strong>
+      </div>
+      <button onclick="toggleChatZoo()" style="background:none; border:none; color:#fff; cursor:pointer;" aria-label="Cerrar chat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="chat-zoo-widget__mensajes" id="chatZooMensajes">
+      <div class="chat-zoo-widget__mensaje chat-zoo-widget__mensaje--bot">
+        ¡Hola! 🐾 Te doy la bienvenida al asistente virtual de <strong>Zoonosis y Bienestar Animal</strong> de Mar del Plata. ¿En qué trámite o consulta te puedo ayudar hoy?
+      </div>
+    </div>
+    <div class="chat-zoo-widget__input-caja">
+      <input type="text" id="chatZooInput" placeholder="Escribí sobre castración, vacunas..." class="chat-zoo-widget__input" onkeydown="if(event.key==='Enter') enviarMensajeChat()">
+      <button onclick="enviarMensajeChat()" class="boton" style="padding:0.4rem 0.8rem; border-radius:50%;" aria-label="Enviar mensaje">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <script>
+    // Menú hamburguesa (mobile)
+    const botonHamburguesa = document.getElementById('botonHamburguesa');
+    const menuPrincipal = document.getElementById('menuPrincipal');
+
+    function setMenu(abierto) {
+      menuPrincipal.classList.toggle('header__nav--abierto', abierto);
+      botonHamburguesa.classList.toggle('header__hamburguesa--activa', abierto);
+      botonHamburguesa.setAttribute('aria-expanded', abierto);
+      botonHamburguesa.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+    }
+
+    botonHamburguesa.addEventListener('click', () => {
+      setMenu(!menuPrincipal.classList.contains('header__nav--abierto'));
+    });
+    menuPrincipal.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+    window.matchMedia('(min-width: 1001px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
+
+    // Chat Zoo
+    const chatZooWidget = document.getElementById('chatZooWidget');
+    const chatZooMensajes = document.getElementById('chatZooMensajes');
+    const chatZooInput = document.getElementById('chatZooInput');
+
+    function toggleChatZoo() {
+      chatZooWidget.classList.toggle('chat-zoo-widget--activo');
+      if (chatZooWidget.classList.contains('chat-zoo-widget--activo')) chatZooInput.focus();
+    }
+
+    function enviarMensajeChat() {
+      const texto = chatZooInput.value.trim();
+      if (!texto) return;
+
+      const userMsg = document.createElement('div');
+      userMsg.className = 'chat-zoo-widget__mensaje chat-zoo-widget__mensaje--user';
+      userMsg.innerText = texto;
+      chatZooMensajes.appendChild(userMsg);
+      chatZooInput.value = '';
+
+      setTimeout(() => {
+        const botMsg = document.createElement('div');
+        botMsg.className = 'chat-zoo-widget__mensaje chat-zoo-widget__mensaje--bot';
+        const t = texto.toLowerCase();
+        if (t.includes('castra') || t.includes('turno')) {
+          botMsg.innerHTML = "Los turnos de castración se solicitan en la web oficial de la Municipalidad o llamando al <strong>147</strong>.";
+        } else if (t.includes('vacuna') || t.includes('rabia')) {
+          botMsg.innerHTML = "La vacunación antirrábica es gratuita y sin turno en la sede de Zoonosis (Hernandarias y Canesi) de lun a vie de 8 a 13 hs.";
+        } else if (t.includes('denuncia') || t.includes('maltrato')) {
+          botMsg.innerHTML = "Si presenciás maltrato en el momento llamá al <strong>911</strong>. Para denuncias de vía pública comunicate al <strong>147</strong>.";
+        } else {
+          botMsg.innerHTML = "Podés comunicarte gratuitamente a la línea <strong>147</strong> de Atención al Vecino para asesorarte.";
+        }
+        chatZooMensajes.appendChild(botMsg);
+        chatZooMensajes.scrollTop = chatZooMensajes.scrollHeight;
+      }, 350);
+    }
+  </script>
+
+</body>
+</html>
